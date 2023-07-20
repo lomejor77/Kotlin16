@@ -7,23 +7,29 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/textPoblacion"
+        android:layout_width="162dp"
+        android:layout_height="34dp"
         android:layout_marginTop="16dp"
+        android:text="@string/paises_latinoamericano"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerV"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.285"
+        tools:ignore="TextSizeCheck" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerV"
-        android:layout_width="409dp"
-        android:layout_height="694dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/paises"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/textPoblacion" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
